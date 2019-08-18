@@ -198,7 +198,9 @@ static unsigned int zipmapRawEntryLength(unsigned char *p) {
     unsigned int l = zipmapRawKeyLength(p);
     return l + zipmapRawValueLength(p+l);
 }
-
+/*
+	hello, this is zeng yuan 
+*/
 static inline unsigned char *zipmapResize(unsigned char *zm, unsigned int len) {
     zm = zrealloc(zm, len);
     zm[len-1] = ZIPMAP_END;
